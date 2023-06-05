@@ -1,3 +1,5 @@
+console.log("JS is connected")
+
 (function(){
 	"use strict";	
 	console.log("fired");
