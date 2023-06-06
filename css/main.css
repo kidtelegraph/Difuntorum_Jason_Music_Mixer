@@ -9,11 +9,6 @@
  /* 1. ---General Styles--- */
 
     body {
-        background-image: none;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: inherit;
-        background-color: #eeee; 
         margin: 0px;
         padding: 0px;
     }
@@ -48,6 +43,10 @@
 
     .txt-spacer {
         margin-top: 30px;
+    }
+
+    .img-spacer {
+        padding: 30px;
     }
 
      /* ---End of General Styles--- */
