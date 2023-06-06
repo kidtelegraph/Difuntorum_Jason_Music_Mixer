@@ -9,13 +9,8 @@
  /* 1. ---General Styles--- */
 
     body {
-        background-image: none;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: inherit;
-        background-color: #eeee; 
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
     }
 
     img, embed, object, video, picture {
@@ -50,4 +45,43 @@
         margin-top: 30px;
     }
 
+    .img-spacer {
+        padding: 30px;
+    }
+
      /* ---End of General Styles--- */
+
+     .hidden {
+        display: none;
+    }
+    .icon-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .icon-container div {
+        width: 50%;
+    }
+    /* #bobmarley {
+        min-width: 600px;
+        margin: 0 auto;
+    }
+    
+    #freddiemercury {
+        min-width: 600px;
+        margin: 0 auto;
+    }
+    
+    #johnlennon {
+        min-width: 600px;
+        margin: 0 auto;
+    }
+    
+    #jimihendrix {
+        min-width: 600px;
+        margin: 0 auto;
+    }
+    
+    #kurtcobain {
+        min-width: 600px;
+        margin: 0 auto;
+    
