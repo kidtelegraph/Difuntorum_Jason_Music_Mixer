@@ -1,1 +1,5 @@
 # Difuntorum_Music_Mixer
+
+Growing up i've always loved listening to music thats why I embarked on an exciting journey that celebrated the iconic artists of every generation. The process began with me just doing research, immersing myself in the music and history of artists like Robert Smith, Kurt Cobain, Freddie Mercury, Bob Marley, and Jimi Hendrix. 
+
+With their influences fresh in my mind, I moved on to sketching out some ideas on how i can share their art, carefully capturing the essence of each artist's unique style and personality. Next, I transfered my ideas into adobe illustrator, using specialized software to create scalable vector graphics. exprthese legendary musicians. As the visuals took shape, I am planning to integrated them into the music mixer interface, meticulously aligning and arranging each element for functionality and aesthetics. The creation of this SVG music mixer stands as a testament to the enduring influence and brilliance of these extraordinary musicians, and I am proud to share it with the world.

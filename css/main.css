@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+#artist-container {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.artist-icons, .artist-stage {
+    margin-top: 40px;
+	height: 400px;
+	border: medium solid #333;
+	background-color: #000;
+	color: inherit;
+	overflow: hidden; 
+}
