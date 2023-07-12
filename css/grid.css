@@ -1,0 +1,123 @@
+/* 
+    CSS Guide 
+
+    1.  General Grid Styles
+        Utility Classes
+
+ */
+
+ /* 1. ---General Grid Styles--- */
+
+html {
+  box-sizing: border-box; 
+}
+
+*, *::before, *::after {
+  box-sizing: inherit; 
+}
+/* ---Utility Classes--- */
+
+.hidden {
+   display: none;
+}
+
+.box {
+   background-color: powderblue;
+   color: rgb(27, 27, 27);
+   border-radius: 5px;
+   padding: 20px;
+   text-align: center;
+   margin-top: 10px;
+   margin-bottom:10px;
+ }
+
+
+.full-width-grid-con {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 767px) 1fr;
+}
+
+.grid-con {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-column-gap: 20px;
+  max-width: 767px;
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /*padding: 0px 15px 0px 15px;*/
+}
+
+.col-span-auto {
+  grid-column: span 1 / span 1;
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
+.col-span-full {
+  grid-column: 1 / -1;
+}
+
+/*-- Using grid column start --*/
+
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.col-start-3 {
+  grid-column-start: 3;
+}
+
+.col-start-4 {
+  grid-column-start: 4;
+}
+
+.col-start-5 {
+  grid-column-start: 5;
+}
+
+.col-start-auto {
+  grid-column-start: auto;
+}
+
+.col-end-1 {
+  grid-column-end: 1;
+}
+
+.col-end-2 {
+  grid-column-end: 2;
+}
+
+.col-end-3 {
+  grid-column-end: 3;
+}
+
+.col-end-4 {
+  grid-column-end: 4;
+}
+
+.col-end-5 {
+  grid-column-end: 5;
+}
+
+.col-end-auto {
+  grid-column-end: auto;
+}
