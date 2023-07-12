@@ -1,87 +1,27 @@
-/* 
-    CSS Guide 
+@charset "utf-8";
+/* CSS Document */
 
-    1.  General Styles (Normalize)
+html {
+    box-sizing: border-box;
+}
 
- */
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 
+#artist-container {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	max-width: 900px;
+	margin: 0 auto;
+}
 
- /* 1. ---General Styles--- */
-
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    img, embed, object, video, picture {
-        max-width: 100%;
-    }
-
-    p, h1, h2, h3, h4, h5 {
-        margin: 0px;
-        padding: 0px;
-    }
-
-    a {
-        text-decoration: none;
-        transition: all .5s ease-in-out;
-    }
-
-    input, textarea {
-        display: block;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    section h2, section h3, section p {
-        padding-left: 15px;
-    }
-
-    .spacer {
-        margin-top: 60px;
-    }
-
-    .txt-spacer {
-        margin-top: 30px;
-    }
-
-    .img-spacer {
-        padding: 30px;
-    }
-
-     /* ---End of General Styles--- */
-
-     .hidden {
-        display: none;
-    }
-    .icon-container {
-        display: flex;
-        flex-direction: row;
-    }
-    .icon-container div {
-        width: 50%;
-    }
-    /* #bobmarley {
-        min-width: 600px;
-        margin: 0 auto;
-    }
-    
-    #freddiemercury {
-        min-width: 600px;
-        margin: 0 auto;
-    }
-    
-    #johnlennon {
-        min-width: 600px;
-        margin: 0 auto;
-    }
-    
-    #jimihendrix {
-        min-width: 600px;
-        margin: 0 auto;
-    }
-    
-    #kurtcobain {
-        min-width: 600px;
-        margin: 0 auto;
-    
+.artist-icons, .artist-stage {
+    margin-top: 40px;
+	height: 400px;
+	border: medium solid #333;
+	background-color: #000;
+	color: inherit;
+	overflow: hidden; 
+}
