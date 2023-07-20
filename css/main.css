@@ -9,7 +9,7 @@ body {
 	margin: 0px;
 	border: 0px;
 	background-repeat:repeat;
-	background-color: #3F2E3E;
+	background-color: #fff;
 	color:#FFF;
 	font-family: 'Luckiest Guy', sans-serif;
 	font-size:16px;
@@ -18,12 +18,40 @@ body {
 	box-sizing: inherit;
 }
 
+header { 
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.header .logo img {
+    height: 100px;
+	display: inline-block;
+}
+
+img :hover {
+	filter: grayscale(100%) blur(2px);
+}
+
+.header .navbar a{
+    margin: 0 3rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
 #artist-arena {
 	text-align: center;
 	display: flex;
 	flex-direction: row;
 	max-width: 900px;
 	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
 }
 
 #artist-container {
@@ -37,10 +65,17 @@ body {
 .artist-icons, .artist-stage {
     margin-top: 40px;
 	height: 400px;
-	border: medium solid #333;
-	background-color: transparent;
+	border: thick solid #90e1c6;
+	border-radius: 30px;
+	background-color: #54425A;
 	color: inherit;
-	overflow: hidden; 
+	overflow: hidden;
+	display: inline-flex;
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	scale: 100%;
+	transform: translate(-12%, 200%); 
 }
 
 .artist-icons {
@@ -56,7 +91,25 @@ body {
 	display: block;
 	padding: 8px;
 	cursor: pointer;
+	filter: contrast(150%);
 }
+
+hair {
+	animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+	0% {
+	  transform: scale(1);
+	}
+	50% {
+	  transform: scale(1.2);
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
+  
 
 /* drop zones */
 
@@ -70,23 +123,41 @@ body {
 }
 
 .artist-dropzones {
-	width:500px; 
-	background-image: url('../images/dark_stage.jpg');
+	width: 1080px;
+	height: 728px; 
+	background-image: url('../images/background@2x.jpg');
+	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 65px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -15%);
+	filter: grayscale(100%) blur(2px);
 }
 
 .drop-zone {
-	width: 50%;
-	height: 50%;
-	border: thin dashed white;
-	position: relative;
+	width: 300px;
+	height: 200px;
+	border: 2px dashed #ccc;
+	background-image: url('../images/light_stage.svg');
+	background-position: center;
+	opacity: 80%;
+	padding: 20px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
 }
 
 .drop-zone img {
 	padding: 0;
 	position: absolute;
-	width: 90%;
+	width: 100%;
 }

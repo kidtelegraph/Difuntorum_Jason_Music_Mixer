@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 555.88 165.05">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #231f20;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 75.1px;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3, .cls-5 {
+        fill: none;
+        stroke: #231f20;
+        stroke-width: .5px;
+      }
+
+      .cls-5 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <text class="cls-2" transform="translate(0 138.5)"><tspan x="0" y="0">superst</tspan></text>
+      <text class="cls-2" transform="translate(350.57 138.5)"><tspan x="0" y="0">r</tspan></text>
+      <text class="cls-2" transform="translate(376.68 138.5)"><tspan x="0" y="0">mi</tspan><tspan class="cls-4" x="80.21" y="0">x</tspan><tspan x="113.85" y="0">er</tspan></text>
+      <polygon class="cls-1" points="290.44 .56 317.09 54.56 376.68 63.22 333.56 105.25 343.74 164.59 290.44 136.57 237.14 164.59 247.32 105.25 204.2 63.22 263.79 54.56 290.44 .56"/>
+    </g>
+    <g>
+      <text class="cls-3" transform="translate(2.93 138.5)"><tspan x="0" y="0">superst</tspan></text>
+      <text class="cls-3" transform="translate(353.49 138.5)"><tspan x="0" y="0">r</tspan></text>
+      <text class="cls-3" transform="translate(379.6 138.5)"><tspan x="0" y="0">mi</tspan><tspan class="cls-4" x="80.21" y="0">x</tspan><tspan x="113.85" y="0">er</tspan></text>
+      <polygon class="cls-5" points="293.37 .56 320.02 54.56 379.6 63.22 336.48 105.25 346.66 164.59 293.37 136.57 240.07 164.59 250.25 105.25 207.13 63.22 266.72 54.56 293.37 .56"/>
+    </g>
+  </g>
+</svg>
