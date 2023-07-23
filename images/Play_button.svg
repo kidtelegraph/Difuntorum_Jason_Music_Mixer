@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="58" height="48" viewBox="0 0 58 48">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #69ffd7;
+      }
+
+      .cls-2 {
+        stroke: #ecc6ee;
+        stroke-linecap: square;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Play_button" transform="translate(-467 -502)">
+    <g id="Rectangle_2" data-name="Rectangle 2" class="cls-1" transform="translate(467 502)">
+      <rect class="cls-3" width="58" height="48" rx="24"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="57" height="47" rx="23.5"/>
+    </g>
+    <path id="Polygon_1" data-name="Polygon 1" class="cls-2" d="M10.5,0,21,18H0Z" transform="translate(507.5 515.5) rotate(90)"/>
+  </g>
+</svg>

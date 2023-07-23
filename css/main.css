@@ -9,11 +9,12 @@ body {
 	margin: 0px;
 	border: 0px;
 	background-repeat:repeat;
-	background-color: #fff;
-	color:#FFF;
+	background-color: #69fce4;
+	color:#ffffff;
 	font-family: 'Luckiest Guy', sans-serif;
 	font-size:16px;
 }
+
 *, *:before, *:after {
 	box-sizing: inherit;
 }
@@ -27,9 +28,41 @@ header {
 	padding-bottom: 20px;
 }
 
+nav ul {
+    list-style: square;
+    margin: 0;
+    padding: 0;
+}
+  
+nav li {
+    display: inline-block;
+	justify-content: center;
+    margin-right: 0;
+	margin-top: 22px;
+}
+  
+nav a {
+    display: block;
+    padding-inline-start: none;
+    text-decoration: none;
+    color: #333;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f5e4ff;
+    border: 1px thistle #071952;
+	border-radius: .5rem;
+    padding: 10px;
+	padding-bottom: 10px;
+}
+  
+nav a:hover {
+    background-color: #bf00ff;
+    color: #fff;
+} 
+
 .header .logo img {
     height: 100px;
 	display: inline-block;
+	scale: 80%;
 }
 
 img :hover {
@@ -39,7 +72,7 @@ img :hover {
 .header .navbar a{
     margin: 0 3rem;
     font-size: 1.5rem;
-    color: #fff;
+    color: #0e0e0f;
 }
 
 
@@ -54,36 +87,27 @@ img :hover {
 	bottom: 50%;
 }
 
-#artist-container {
-	text-align: center;
-	display: flex;
-	flex-direction: row;
-	max-width: 900px;
-	margin: 0 auto;
-}
-
-.artist-icons, .artist-stage {
+.artist-stage {
     margin-top: 40px;
-	height: 400px;
+	height: 120px;
 	border: thick solid #90e1c6;
 	border-radius: 30px;
-	background-color: #54425A;
-	color: inherit;
-	overflow: hidden;
-	display: inline-flex;
-	position: absolute;
-	top: 50%;
-	bottom: 50%;
-	scale: 100%;
-	transform: translate(-12%, 200%); 
 }
 
 .artist-icons {
-	width: 1200px;
+	min-width: 800px;
 	height: fit-content;
 	margin-right: 20px;
 	display: flex;
 	flex-direction: row;
+	color: inherit;
+	overflow: hidden;
+	display: inline-flex;
+	position: absolute;
+	top: 40%;
+	bottom: 50%;
+	scale: 100%;
+	transform: translate(-50%, 230%); 
 }
 
 .artist-image {
@@ -92,6 +116,114 @@ img :hover {
 	padding: 8px;
 	cursor: pointer;
 	filter: contrast(150%);
+	border: thick solid  #90e1c6;
+	background-color: #54425A;
+}
+
+#artistHolder {
+	margin: 0px auto;
+	text-align:center;
+}
+
+#artistHolder img {
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+#artistHolder img:hover {
+	opacity:.5;
+}
+
+.instru-icons {
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	color: inherit;
+	display: inline-flex;
+	position: absolute;
+	transform: translate(0%, 0%);
+	margin-left: 40%; 
+}
+
+.instru-image {
+	width: 100px;
+	display: block;
+	padding: 12px;
+	cursor: pointer;
+	filter: contrast(150%);
+	border: thick solid  #90e1c6;
+	background-color: #54425A;
+}
+
+#instruHolder {
+	margin: 0px auto;
+	padding-left: 90%;
+	text-align: center;
+}
+
+#instruHolder img {
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+#instruHolder img:hover {
+	opacity: .5;
+}
+
+.buttons {
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	color: inherit;
+	display: inline-flex;
+	position: absolute;
+	transform: translate(0%, 0%);
+	margin-left: 40%; 
+}
+
+.buttons-image {
+	width: 100px;
+	display: inline-block;
+	padding: 12px;
+	cursor: pointer;
+	filter: contrast(150%);
+	border: thick solid  #90e1c6;
+	background-color: #54425A;
+}
+
+#buttonsHolder {
+	margin: 0px auto;
+	text-align: center;
+	background-color: #54425A;
+	width: fit-content;
+	height: 60px;
+	display: inline-table;
+	overflow: hidden;
+	position: absolute;
+	top: 35%;
+	bottom: 50%;
+	scale: 100%;
+	transform: translate(-155%, 730%);
+	border-radius: 20px;
+}
+
+#buttonsHolder img {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 8px;
+	background-color: #54425A;
+	border-radius: 20px;
+	cursor: pointer;
+	position: relative;
+}
+
+#buttonsHolder img:hover {
+	opacity: 100;
+	background-color:  #90e1c6;
 }
 
 hair {
@@ -113,18 +245,44 @@ hair {
 
 /* drop zones */
 
-.puzzle-board {
-	width:600px; 
-	background-image: url('../images/light_stage.svg');
+#artist-dropzones {
+	width: 120px;
+	height: 120px;
+	border: 4px dashed #bf00ff;
+	background-position: center;
+	opacity: 100%;
+	padding: 20px;
+	padding-block: 5.3rem;
+	display: flex;
+	flex-direction: row wrap;
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	transform: translate(-50%, 50%);
+}
+
+.artist-dropzones {
+	min-width: 900px;
+	min-height: 480px; 
+	background-image: url('../images/background@2x.jpg');
+	border-style: inherit 3.125rem;
+	border-color: #54425A;
+	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 65px;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -20%);
+	filter: grayscale(0%);
 }
 
-.artist-dropzones {
-	width: 1080px;
-	height: 728px; 
+/*.artist-dropzones-Active {
+	width: 900px;
+	height: 480px; 
 	background-image: url('../images/background@2x.jpg');
 	background-position: center;
 	background-size: cover;
@@ -136,16 +294,35 @@ hair {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -15%);
-	filter: grayscale(100%) blur(2px);
-}
+}*/
+
 
 .drop-zone {
+	width: 100px;
+	height: 50px;
+	border: 4px dashed #bf00ff;
+	background-position: center;
+	opacity: 100%;
+	padding: 20px;
+	padding-block: 3.5rem;
+	margin-top: 30px;
+	display: inline-block;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	position: relative;
+	margin-left: 25px;
+	top: 50%;
+	left: 33%;
+ 	transform: translate(-50%, 50%);
+}
+
+.drop-zone-artist {
 	width: 300px;
 	height: 200px;
-	border: 2px dashed #ccc;
+	border: 4px dashed #bf00ff;
 	background-image: url('../images/light_stage.svg');
 	background-position: center;
-	opacity: 80%;
+	opacity: 100%;
 	padding: 20px;
 	align-items: center;
 	justify-content: center;
@@ -156,8 +333,40 @@ hair {
 	transform: translate(-50%, 50%);
 }
 
-.drop-zone img {
-	padding: 0;
+.drop-zone-instru {
+	width: 120px;
+	height: 120px;
+	background-position: center;
+	opacity: 100%;
+	padding-block: 5.3rem;
+	display: inline-block;
+	flex-direction: row;
 	position: absolute;
-	width: 100%;
+	top: 20%;
+	left: 30%;
 }
+
+#drop-zone {
+	margin: 15px auto;
+	text-align:center;
+}
+
+#drop-zone {
+	margin: 15px auto;
+	text-align:center;
+	grid-row: 5;
+}
+
+#drop-zone img {
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 20px;
+	cursor: pointer;
+	filter: blur(100%);
+	flex-direction: row;
+}
+
+#drop-zone img:hover {
+	filter: saturate(10px);
+}
+

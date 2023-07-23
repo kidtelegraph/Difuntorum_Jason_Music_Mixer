@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="58" height="48" viewBox="0 0 58 48">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #69ffd7;
+      }
+
+      .cls-2 {
+        stroke: #ecc6ee;
+        stroke-linecap: round;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Pause_button" transform="translate(-528 -1180)">
+    <g id="Rectangle_2" data-name="Rectangle 2" class="cls-1" transform="translate(528 1180)">
+      <rect class="cls-3" width="58" height="48" rx="24"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="57" height="47" rx="23.5"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" class="cls-2" y2="17" transform="translate(551 1195.5)"/>
+    <line id="Line_2" data-name="Line 2" class="cls-2" y2="17" transform="translate(564 1195.5)"/>
+  </g>
+</svg>

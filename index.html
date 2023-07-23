@@ -7,19 +7,34 @@
         <title>MUSIC MIXER</title>
         <link href="css/main.css" rel="stylesheet">
     </head>
+
         <header class="header">
         <a href="#" class="logo">
             <img src="images/superstar_logo.svg" alt="superstar logo">
         </a>
+        
+        <nav class="navbar">
+            <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="mixer.html">Music Mixer</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            </ul>
+          </nav>
         </header>
     <body>    
-        <section id="puzzle-board">
+
             <!-- this is the stage to for the artists -->
             <div class="artist-dropzones">
-                <div class="drop-zone"></div>
+                <div class="drop-zone-artist"></div>
             </div>
-        
-            <section id="artist-container">
+
+            <div class="drop-zone"></div>
+            <div class="drop-zone"></div>
+            <div class="drop-zone"></div>
+            <div class="drop-zone"></div>
+
+            <nav id="artistHolder">
             <!-- these are the artists to drag-->
             <div class="artist-icons">
                 <img src="images/b_marley.svg" class="artist-image" alt="bob marley">
@@ -29,7 +44,27 @@
                 <img src="images/k_cobain.svg" class="artist-image" alt="kurt cobain">
                 <img src="images/r_smith.svg" class="artist-image" alt="robert smith">
             </div>
-            </section>
-        </section>        
+            </nav>
+            
+            <nav id="instruHolder">
+                <!-- these are the instruments that can be placed -->
+                <div class="instruHolder">
+                    <img src="images/ElectricGuitar.svg" class="instru-image" alt="electricguitar">
+                    <img src="images/Guitar.svg" class="instru-image" alt="guitar">
+                    <img src="images/Piano.svg" class="instru-image" alt="piano">
+                    <img src="images/Mic.svg" class="instru-image" alt="microphone">
+                    <img src="images/Violin.svg" class="instru-image" alt="violin">
+                </div>
+                
+            <nav id="buttonsHolder">
+                <div class="buttonsHolder">
+                    <img src="images/Play_button.svg" class="play-button" alt="play">
+                    <img src="images/Pause_button.svg" class="pause-button" alt="pause">
+                    <img src="images/Track_seeker.svg" class="track-seeker" alt="tracker">
+                    <img src="images/Stop_button.svg" class="stop-button" alt="stop">
+                    <img src="images/Volume_button.svg" class="volume-button" alt="volume">
+                </div>
+            </nav>    
+    <script src="js/main.js"></script>        
     </body>
-
+</html>
