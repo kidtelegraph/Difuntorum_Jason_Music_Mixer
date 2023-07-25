@@ -29,6 +29,15 @@ li {
 	list-style-type: none;
 }
 
+.hidden {
+	display: none;
+}
+
+.artist-name {
+	text-align: center;
+	transform: translate(0%, 0);
+}
+
 #header { 
     display: flex;
     align-items: center;
@@ -84,6 +93,24 @@ img :hover {
     color: #0e0e0f;
 }
 
+.text-animation {
+	transition: color 1.5s ease-in-out;
+	font-size: 100px;
+	text-align: center;
+	background-color: #0044ff;
+	text-shadow: #69fce4;
+}
+
+.wiggle-animation:hover {
+	animation: wiggle 1.3s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+	0% { transform: rotate(-2deg); }
+	50% { transform: rotate(2deg); }
+	100% { transform: rotate(-2deg); }
+}
+
 #resetBtn {
     background-color: #f5e4ff;
     color: #fff;
@@ -94,7 +121,7 @@ img :hover {
     transition: all 0.5s;
   }
   
-  #resetBtn:hover {
+#resetBtn:hover {
     background-color: #abb021;
     color: #000000;
 }
@@ -109,7 +136,7 @@ img :hover {
     height: 900px;
 }
 
-.banner__content {
+.banner_content {
     justify-content: center;
     display: flex;
 }
@@ -155,6 +182,22 @@ img :hover {
 	transform: translate(-50%, -600%);
 	z-index: inherit;
 	overflow: hidden;
+}
+
+#start-btn {
+	padding: 50px;
+	background-color: #1a0c20;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	cursor: pointer;
+	text-align: center;;
+	justify-content: center;
+	display: flex;
+	color: #f5e4ff;
+	border-color: thick solid #0e0e0f;
+	border-radius: 50px;
+	transform: translate(210%,0%);
+	font-weight: bold;
+	scale: 150%;
 }
 
 #play-btn {
@@ -237,17 +280,23 @@ img :hover {
     padding: 10px;
 }
 
+#audio-file {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+  }  
+
 .artist-icons {
-    scale: 80%;
     width: 100px;
     height: 50px;
-    padding: 5px;
+    padding: 15px;
     display: flex;
     flex-direction: row;
     color: inherit;
     position: absolute;
-    left: 28%;
-    bottom: -50%;
+    left: 23%;
+    bottom: -20%;
     gap: 20px;
 }
 
@@ -261,4 +310,19 @@ img :hover {
 	background-color: #54425A;
 	border-radius: 12%;
 	overflow: hidden;
+}
+
+.biography-container {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
+	gap: 20px;
+	background-color: #0044ff;	
+}
+  
+.artist-container {
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	padding: 20px;
+	max-width: 500px;
+	transform: translate(80%);
 }
