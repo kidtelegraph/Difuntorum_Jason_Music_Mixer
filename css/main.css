@@ -23,7 +23,7 @@ body {
 
 ul {
 	list-style-type: none;
-  }
+}
   
 li {
 	list-style-type: none;
@@ -44,7 +44,11 @@ li {
     justify-content: space-between;
     background: #0e0e0f;
     padding: 15px 30px;
-} 
+}
+
+.about-us {
+	display: block;
+}
 
 nav ul {
     list-style: square;
@@ -119,7 +123,7 @@ img :hover {
     border: none;
     cursor: pointer;
     transition: all 0.5s;
-  }
+}
   
 #resetBtn:hover {
     background-color: #abb021;
@@ -325,4 +329,65 @@ img :hover {
 	padding: 20px;
 	max-width: 500px;
 	transform: translate(80%);
+}
+
+.about-container {
+	background-color: black;
+	color: white;
+	padding: 50px;
+	text-align: center;
+	margin-left: 10rem;
+	margin-right: 10rem;
+	border-radius: 20rem;
+}
+
+.about-container:hover {
+	background-color: white;
+	color: black;
+	padding: 50px;
+	text-align: center;
+	transition: color 1.5s ease-in-out;
+}
+
+.footer {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #1f1b5c;
+	padding: 20px;
+	max-width: 100%;
+	margin-right: 30rem;
+	max-width: fit-content;
+}
+
+.footer-logo {
+	scale: 80%;
+	max-height: 30%;
+}
+
+.footer-text {
+	display: inline-block;
+	flex-direction: center;
+	align-items: center;
+	justify-content: center;
+	font-size: smaller;
+}
+  
+.footer-logo-container {
+	display: flex;
+	justify-content: center;
+	margin-right: auto;
+}
+  
+.social-footer-icons {
+	margin-left: auto;
+	display: flex;
+	justify-content: center;
+}
+  
+.footer-text-container {
+	margin-left: 20px;
+	font-size: 12px;
+	text-align: center;
 }
