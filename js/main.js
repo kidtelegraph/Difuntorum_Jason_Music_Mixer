@@ -1,52 +1,78 @@
-console.log("JS file is connected")
+console.log("JS file connected");
 
-const b_marley = document.querySelector("#b_marley");
-const f_mercury = document.querySelector("#f_mercury");
-const j_hendrix = document.querySelector("#j_hendrix");
-const j_lennon = document.querySelector("#j_lennon");
-const k_cobain = document.querySelector("#k_cobain");
-const r_smith = document.querySelector("#r_smith");
+// Variables
+const theButtons = document.querySelectorAll("#buttonControls img"),
+    soundStage = document.querySelector(".sound-stage"),
+    musicInstruDiv = document.querySelector(".music-instru"),
+    artistIconsDiv = document.querySelector(".artist-icons"),
+    dropZones = document.querySelectorAll(".drop-zone"),
+	artistZone = document.querySelectorAll(".drop-zone-artist"),
+    playBtn = document.getElementById("play-btn"),
+    stopBtn = document.getElementById("stop-btn"),
+    trackBtn = document.getElementById("track-btn"),
+    volumeBtn = document.getElementById("volume-btn"),
+    audio = document.getElementById("audio"),
+    musicInstru = document.querySelectorAll(".music-instru li");
+	artistIcons = document.querySelectorAll(".artist-icons li");
 
-const electricguitar = document.querySelector("#electricguitar");
-const guitar = document.querySelector("#guitar");
-const piano = document.querySelector("#piano");
-const microphone = document.querySelector("#microphone");
-const violin = document.querySelector("#violin");
+
+let draggedPiece;
 
 
-
-function logId() {
-    console.log(this.id);
+//functions
+function handleDragOver(e) {
+  e.preventDefault();
+  console.log("Dragged over me");
+}
+    
+function handleStartDrag() {
+  console.log("Started dragging this piece:", this);
+  draggedPiece = this;
+}
+    
+function handleDrop(e) {
+  e.preventDefault();
+  console.log("Dropped something on me");
+      if (this.children.length >= 1) {
+        return;
+    }
+    
+      this.appendChild(draggedPiece);
 }
 
-b_marley.addEventListener("click", logId);
-f_mercury.addEventListener("click", logId);
-j_hendrix.addEventListener("click", logId);
-j_lennon.addEventListener("click", logId);
-k_cobain.addEventListener("click", logId);
-r_smith.addEventListener("click", logId);
+function resetMusicInstruDiv() {
+	musicInstru.forEach((piece) => {
+	  piece.classList.remove("dropped");
+	  piece.parentNode.removeChild(piece);
+	  musicInstruDiv.appendChild(piece);
+	});
+}
 
-const dropZone = document.getElementById('drop-zone');
+function resetArtistIconsDiv() {
+	artistIcons.forEach((piece) => {
+	  piece.classList.remove("dropped");
+	  piece.parentNode.removeChild(piece);
+	  artistIconsDiv.appendChild(piece);
+	});
+}
 
-/* dropZone.addEventListener('drop', function(event) {
-  event.preventDefault();
-  window.location.href = 'mixer.html';
+// Event Listeners
+musicInstru.forEach((piece) => piece.addEventListener("dragstart", handleStartDrag));
+dropZones.forEach((zone) => {
+  zone.addEventListener("dragover", handleDragOver);
+  zone.addEventListener("drop", handleDrop);
 });
 
-//Can also be written like this:
-//(() => {  })();   
+artistIcons.forEach((piece) => piece.addEventListener("dragstart", handleStartDrag));
+artistZone.forEach((zone) => {
+	zone.addEventListener("dragover", handleDragOver);
+	zone.addEventListener("drop", handleDrop);
+});
 
-*/
+playBtn.addEventListener("click", playBtn);
+stopBtn.addEventListener("click", stopBtn);
 
-
-
-/* function instruAudio {
-	
-	let guitar = document.createElement("audio");
-	guitar.src = "audio/melody_beat.mp3";
-	guitar.load();
-	document.body.appendChild(guitar);
-	guitar.play();
-} */
-
-// Info about IIFE https://flaviocopes.com/javascript-iife/
+const resetBtn = document.getElementById("reset-btn");
+	resetBtn.addEventListener("click", resetMusicInstruDiv);
+	resetBtn.addEventListener("click", resetArtistIconsDiv);
+// resetButton.addEventListener("click", resetArtistIconsDiv);
