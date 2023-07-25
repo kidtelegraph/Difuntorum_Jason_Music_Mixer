@@ -48,6 +48,23 @@ const artists = [
       details: ["Jimi Hendrix (1942-1970) was an American rock guitarist, singer, and songwriter who is widely regarded as one of the most influential and innovative musicians in the history of rock music. Born Johnny Allen Hendrix, he later adopted the stage name Jimi and achieved legendary status for his virtuosic guitar playing and groundbreaking approach to the instrument."]
     },
 ];
+
+const artistContainers = document.querySelectorAll(".biography-container");
+
+artistContainers.forEach((container) => {
+  const artistName = container.querySelector(".artist-name").textContent;
+  const artistDetails = artists.find((artist) => artist.name === artistName).details;
+  const artistDetailsList = container.querySelector(".artist-details");
+
+  container.addEventListener("click", () => {
+    artistDetailsList.innerHTML = "";
+    artistDetails.forEach((detail) => {
+      const listItem = document.createElement("li");
+      listItem.textContent = detail;
+      artistDetailsList.appendChild(listItem);
+    });
+  });
+});
   
 function handleDragStart() {
   console.log("Started dragging this piece:", this);
