@@ -1,70 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MUSIC MIXER</title>
-        <link href="css/main.css" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC MIXER</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+    <a href="#" class="logo">
+        <img src="images/superstar_logo.svg" alt="superstar logo">
+    </a>
+    <nav class="navbar">
+        <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#biography">Biography</a></li>
+        <li><a href="#musicmixer">Music Mixer</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        </ul>
+    </nav>
+    </header>
 
-        <header class="header">
-        <a href="#" class="logo">
-            <img src="images/superstar_logo.svg" alt="superstar logo">
-        </a>
-        
-        <nav class="navbar">
-            <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#biography">Biography</a></li>
-            <li><a href="mixer.html">Music Mixer</a></li>
-            <li><a href="#aboutus">About Us</a></li>
-            </ul>
-          </nav>
-        </header>
-    <body>    
-
-            <!-- this is the stage to for the artists -->
-            <div class="artist-dropzones">
-                <div class="drop-zone-artist"></div>
+    <main class="banner container col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+        <div class="banner content">
+            <!-- Instrument Drop Zones -->
+        <div class="sound-stage">
+            <div class="drop-zone"></div>
+            <div class="drop-zone"></div>
+            <div class="drop-zone"></div>
+            <div class="drop-zone"></div>
+        </div>
+            <!-- Artist Drop Zone -->
+            <div class="drop-zone-artist"></div>
+        <div class="button-controls">
+            <!-- Buttons -->
+            <button id="play-btn">
+              <img src="images/play_button.svg" alt="">
+            </button>
+            <button id="stop-btn">
+              <img src="images/stop_button.svg" alt="">    
+            </button>
+            <button id="track-btn" alt="">
+                <img src="images/track_seeker.svg" alt="">
+            </button>
+            <button id="volume-btn" alt="">
+                <img src="images/volume_button.svg">
+            </button>
+            <button id="reset-btn" alt="">RESET
+            </button>
+        </div>
+        <section class="music col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+        <ul class="music-instru">
+                <!-- Draggable Instruments -->
+            <div>
+            <li id="audio/melody_beat.mp3">
+                <img class="instru-image" src="images/electricguitar.svg" alt="electric-guitar">
+                <audio src="audio/melody_beat.mp3"></audio>
             </div>
-
-            <div class="drop-zone"></div>
-            <div class="drop-zone"></div>
-            <div class="drop-zone"></div>
-            <div class="drop-zone"></div>
-
-            <nav id="artistHolder">
-            <!-- these are the artists to drag-->
+            </li>
+            <li id="audio/guitar_beat.mp3">   
+            <div>
+                <img class="instru-image" src="images/guitar.svg" alt="guitar">
+            </div>
+            </li>
+            <li id="audio/mic_beat.mp3">
+            <div>
+                <img class="instru-image" src="images/mic.svg" alt="microphone">
+            </div>
+            </li>
+            <li id="audio/piano_beat.mp3">
+            <div>
+                <img class="instru-image" src="images/piano.svg" alt="piano">
+            </div>
+            </li>
+            <li id="audio/violin_beat.mp3">
+            <div>
+                <img class="instru-image" src="images/violin.svg" alt="violin">
+            </div>
+            </li>
+        </ul>
             <div class="artist-icons">
-                <img src="images/b_marley.svg" class="artist-image" alt="bob marley">
-                <img src="images/f_mercury.svg" class="artist-image" alt="freddie mercury">
-                <img src="images/j_hendrix.svg" class="artist-image" alt="jimi hendrix">
-                <img src="images/j_lennon.svg" class="artist-image" alt="john lennon">
-                <img src="images/k_cobain.svg" class="artist-image" alt="kurt cobain">
-                <img src="images/r_smith.svg" class="artist-image" alt="robert smith">
+                <!-- Draggable Instruments -->
+            <li id="images/b_marley.svg">
+            <div>
+                <img class="artist-image" src="images/b_marley.svg" alt="bobmarley">
             </div>
-            </nav>
-            
-            <nav id="instruHolder">
-                <!-- these are the instruments that can be placed -->
-                <div class="instruHolder">
-                    <img src="images/ElectricGuitar.svg" class="instru-image" alt="electricguitar">
-                    <img src="images/Guitar.svg" class="instru-image" alt="guitar">
-                    <img src="images/Piano.svg" class="instru-image" alt="piano">
-                    <img src="images/Mic.svg" class="instru-image" alt="microphone">
-                    <img src="images/Violin.svg" class="instru-image" alt="violin">
-                </div>
-                
-            <nav id="buttonsHolder">
-                <div class="buttonsHolder">
-                    <img src="images/Play_button.svg" class="play-button" alt="play">
-                    <img src="images/Pause_button.svg" class="pause-button" alt="pause">
-                    <img src="images/Track_seeker.svg" class="track-seeker" alt="tracker">
-                    <img src="images/Stop_button.svg" class="stop-button" alt="stop">
-                    <img src="images/Volume_button.svg" class="volume-button" alt="volume">
-                </div>
-            </nav>    
-    <script src="js/main.js"></script>        
+            </li>
+            <li id="images/f_mercury.svg">
+            <div>
+                <img class="artist-image" src="images/f_mercury.svg" alt="freddiemercury">
+            </div>
+            </li>
+            <li id="images/j_hendrix.svg">
+            <div>
+                <img class="artist-image" src="images/j_hendrix.svg" alt="jimihendrix">
+            </div>
+            </li>
+            <li id="images/j_lennon.svg">
+            <div>
+                <img class="artist-image" src="images/j_lennon.svg" alt="johnlennon">
+            </div>
+            </li>
+            <li id="images/k_cobain.svg">
+            <div>
+                <img class="artist-image" src="images/k_cobain.svg" alt="kurtcobain">
+            </div>
+            </li>
+            <li id="images/r_smith.svg">
+            <div>
+                <img class="artist-image" src="images/r_smith.svg" alt="robertsmith">
+            </div>
+            </li>
+            </div>
+            </section>
+        <script src="js/main.js"></script>
     </body>
 </html>
