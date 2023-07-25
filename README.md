@@ -33,3 +33,7 @@ Jimi Hendrix
 # Credits
 
 Jason Marc C. Difuntorum
+
+# License
+
+Superstar Mixer @ 2023 All rights Reserved.
